@@ -29,12 +29,15 @@ setInterval(updateClock, 1000);
 
 
 // !-------------Formulario-------------
-document.getElementById("enviar").addEventListener("click", () => {
-   document.getElementById("mensaje-exitoso").style.display = "block";
- });
+let mensaje = document.getElementById("mensaje-exitoso");
+let enviar = document.getElementById("enviar");
 
-function hideMessage() {
-  document.getElementById("mensaje-exitoso").style.display = "none"
-}
+enviar.addEventListener("click", () => {
+  mensaje.style.display = "block";
 
-setInterval(hideMessage, 8000);
+  setTimeout(function() {
+    mensaje.style.display = "none";
+  }, 8000)
+});
+
+
