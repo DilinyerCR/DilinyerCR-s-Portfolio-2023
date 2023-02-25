@@ -1,3 +1,4 @@
+// !-------------Reloj-------------
 function updateClock() {
   let now = new Date();
   let hours = now.getHours();
@@ -29,5 +30,11 @@ setInterval(updateClock, 1000);
 
 // !-------------Formulario-------------
 document.getElementById("enviar").addEventListener("click", () => {
-   document.getElementById("mensaje-exitoso").style.display = "block"
+   document.getElementById("mensaje-exitoso").style.display = "block";
  });
+
+function hideMessage() {
+  document.getElementById("mensaje-exitoso").style.display = "none"
+}
+
+setInterval(hideMessage, 8000);

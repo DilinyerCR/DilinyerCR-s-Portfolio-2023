@@ -220,6 +220,7 @@ textarea {
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   color: white;
   background-color: #0097a7;
 }
